@@ -34,23 +34,31 @@ body {
     min-width: 300px;
     height: auto;         
     max-height: 90vh;     
-    background-color: #fff;
+
+    background: rgba(255, 255, 255, 0.6);   /* putih transparan */
+    backdrop-filter: blur(12px);            /* efek glass blur */
+    -webkit-backdrop-filter: blur(12px);    /* safari fix */
+
     display: none;        
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+
     padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(255, 102, 153, 0.2);
-    border: 2px solid #8b0000;
-    overflow-y: auto;     /* scroll jika konten tinggi */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4); /* soft border */
+
+    overflow-y: auto;    
     box-sizing: border-box;
-    }
+}
+
 
     #page1 {
       display: flex;
@@ -453,6 +461,7 @@ and thank you for letting me love you the way i do.    </p></div>
 </body>
 
 </html>
+
 
 
 
